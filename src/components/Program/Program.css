@@ -1,0 +1,34 @@
+.program {
+    background-color: #f8f9fa;
+}
+
+.program-card {
+    height: 350px;
+    cursor: pointer;
+}
+
+.program-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover img {
+    transform: scale(1.05);
+}
+
+.program-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 108, 252, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.program-card:hover .program-overlay {
+    opacity: 1;
+}
