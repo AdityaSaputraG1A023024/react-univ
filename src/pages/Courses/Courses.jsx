@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Courses.css';
+import { Link } from 'react-router-dom';
 import { Card, Button, Badge, Form, InputGroup } from 'react-bootstrap';
 import BusinessCourseImg from '../../utils/images/business-course.png';
 import ComputerScienceCourseImg from '../../utils/images/computer-science-course.png';
@@ -148,6 +149,13 @@ function Courses() {
                         </div>
                     )}
                 </div>
+                <div className="text-center mb-5">
+                    <Link to="/courses">
+                        <Button variant="primary" size="lg" className='px-4 py-2'>
+                            <i className="bi bi-collection me-2"></i> Lihat Semua Program
+                        </Button>
+                    </Link>
+                </div> 
             </div>
             <FaqAccordion />
         </div>

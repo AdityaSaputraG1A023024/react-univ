@@ -6,7 +6,7 @@ function FaqAccordion() {
   return (
     <div className='faq-section py-5'>
         <div className='container d-flex flex-column align-items-center'>
-            <h2 className='text-center text-capitalize mb-3'>Frequently Asked Questions</h2>
+            <h2 className='text-center text-capitalize mb-3'>Pertanyaan Umum</h2>
             <p className='text-center mb-5'>
                 Berikut ini adalah beberapa pertanyaan yang sering diajukan tentang Universitas Bengkulu. Jika Anda memiliki pertanyaan lainnya, 
                 silakan hubungi kami melalui <strong>Kontak</strong>.
