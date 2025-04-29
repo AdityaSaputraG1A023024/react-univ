@@ -202,9 +202,9 @@ function Blog() {
                                         <li className="page-item disabled">
                                             <a className="page-link" href="#prev" tabIndex="-1">Previous</a>
                                         </li>
-                                        <li className="page-item active"><a className="page-link" href="#1">1</a></li>
-                                        <li className="page-item"><a className="page-link" href="#2">2</a></li>
-                                        <li className="page-item"><a className="page-link" href="#3">3</a></li>
+                                        <li className="page-item active"><a className="page-link" href="#blog">1</a></li>
+                                        <li className="page-item"><a className="page-link" href="#blog">2</a></li>
+                                        <li className="page-item"><a className="page-link" href="#blog">3</a></li>
                                         <li className="page-item">
                                             <a className="page-link" href="#next">Next</a>
                                         </li>
