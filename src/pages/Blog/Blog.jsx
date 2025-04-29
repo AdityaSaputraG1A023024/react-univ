@@ -206,7 +206,7 @@ function Blog() {
                                         <li className="page-item"><a className="page-link" href="#blog">2</a></li>
                                         <li className="page-item"><a className="page-link" href="#blog">3</a></li>
                                         <li className="page-item">
-                                            <a className="page-link" href="#blog">Next</a>
+                                            <a className="page-link" href="#contact">Next</a>
                                         </li>
                                     </ul>
                                 </nav>
