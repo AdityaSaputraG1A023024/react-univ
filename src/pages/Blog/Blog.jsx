@@ -206,13 +206,13 @@ function Blog() {
                                         <li className="page-item"><a className="page-link" href="#blog">2</a></li>
                                         <li className="page-item"><a className="page-link" href="#blog">3</a></li>
                                         <li className="page-item">
-                                            <a className="page-link" href="#next">Next</a>
+                                            <a className="page-link" href="#blog">Next</a>
                                         </li>
                                     </ul>
                                 </nav>
                             </>
                         ) : (
-                            <div className="text-center py-5">
+                            <div className="text-center py -5">
                                 <h4 className="text-muted">Artikel tidak ditemukan</h4>
                                 <p className="mb-4">Tidak ada artikel yang cocok dengan pencarian Anda.</p>
                                 <Button
