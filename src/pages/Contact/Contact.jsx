@@ -65,13 +65,21 @@ function Contact() {
                         <div className='mt-5'>
                             <h5 className='fw-semibold mb-3'>Connect With Us</h5>
                             <div className='d-flex gap-3'>
-                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3'><i className="bi bi-facebook"></i></a>
-                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3'><i className="bi bi-instagram"></i></a>
-                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3'><i className="bi bi-youtube"></i></a>
-                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3'><i className="bi bi-whatsapp"></i></a>
-                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3'><i className="bi bi-linkedin"></i></a>
+                                <a href="https://www.facebook.com/unibofficial1" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/unibofficial/" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@UNIBTV" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-youtube"></i>
+                                </a>
+                                <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='text-dark fs-3' target="_blank" rel="noopener noreferrer">
+                                    <i className="bi bi-linkedin"></i>
+                                </a>
                             </div>
                         </div>
+
                     </div>
 
                     {/* Contact Form Right */}

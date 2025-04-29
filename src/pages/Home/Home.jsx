@@ -17,17 +17,16 @@ const blogs = [
         img: Blog1Img,
         category: 'Pendidikan',
         author: 'Dr. Ahmad Fauzi',
-        readTime: '5 min read',
         title: 'Inovasi Pembelajaran Daring di Era Digital',
         description: 'Bagaimana Universitas Bengkulu mengadaptasi teknologi terbaru untuk menciptakan pengalaman pembelajaran daring yang lebih interaktif dan efektif bagi mahasiswa.',
-        date: '15 Juni 2023'
+        date: '15 Juni 2023',
+        externalUrl: 'https:youtu.be/YiHnTR7ym8s?si=A3qCQT4B07XuDvjD'
     },
     {
         id: 2,
         img: Blog2Img,
         category: 'Penelitian',
         author: 'Prof. Sri Mulyani',
-        readTime: '8 min read',
         title: 'Penelitian Terbaru: Potensi Ekosistem Mangrove Bengkulu',
         description: 'Tim peneliti UNIB berhasil mengidentifikasi spesies mangrove langka yang memiliki potensi besar untuk pengembangan obat-obatan modern.',
         date: '10 Juni 2023'
@@ -36,12 +35,12 @@ const blogs = [
         id: 3,
         img: Blog3Img,
         category: 'Prestasi',
-        featured: true, // tambahan untuk badge "Unggulan"
         author: 'Dian Sastro',
-        readTime: '4 min read',
         title: 'Mahasiswa UNIB Juara Kompetisi Robotik Nasional',
         description: 'Tim robotik Fakultas Teknik UNIB berhasil meraih juara pertama dalam kompetisi nasional dengan inovasi robot pembersih sampah pantai.',
-        date: '5 Juni 2023'
+        date: '5 Juni 2023',
+        featured: true
+        
     }
 ];
 
@@ -158,28 +157,30 @@ function Home() {
                                         </Badge>
                                     </div>
 
-                                        <Card.Body>
-                                            <div className="d-flex justify-content-between mb-2">
-                                                <small className="text-muted">
-                                                    <i className="bi bi-calendar3 me-1"></i> {blog.date}
-                                                </small>
-                                            </div>
-                                            <Card.Title className='fs-5'>{blog.title}</Card.Title>
-                                            <Card.Text className='text-muted'>{blog.description}</Card.Text>
-                                        </Card.Body>
-
-                                        <Card.Footer className="bg-white border-0 mb-2">
-                                            <div className="d-flex justify-content-between align-items-center">
-                                                <Link to="/blog" className="text-decoration-none">
-                                                    Baca Selengkapnya <i className="bi bi-arrow-right"></i>
-                                                </Link>
-                                            </div>
-                                        </Card.Footer>
+                                    <Card.Body>
+                                        <div className="d-flex justify-content-between mb-2">
+                                            <small className="text-muted">
+                                                <i className="bi bi-calendar3 me-1"></i> {blog.date}
+                                            </small>
+                                        </div>
+                                        <Card.Title className='fs-5'>{blog.title}</Card.Title>
+                                        <Card.Text className='text-muted'>{blog.description}</Card.Text>
+                                    </Card.Body>
+                                    <Card.Footer className="bg-white border-0">
+                                        <a
+                                            href={blog.externalUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="custom-read-more"
+                                        >
+                                            <span>Baca Selengkapnya</span>
+                                            <i className="bi bi-box-arrow-up-right ms-2"></i>
+                                        </a>
+                                    </Card.Footer>
                                 </Card>
                             </div>
                         ))}
                     </div>
-
                     <Link to="/blog">
                         <Button variant="primary" size="lg" className='px-4 py-2'>
                             <i className="bi bi-collection me-2"></i>Lihat Semua Berita
@@ -187,7 +188,6 @@ function Home() {
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }

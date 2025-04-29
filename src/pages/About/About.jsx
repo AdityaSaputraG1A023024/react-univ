@@ -201,7 +201,7 @@ function About() {
                         di Universitas Bengkulu.
                     </p>
                     <div className='d-flex gap-3 justify-content-center'>
-                        <Link to="/courses" className='btn btn-light btn-lg px-4 py-2 fw-bold'>
+                        <Link to="/contact" className='btn btn-light btn-lg px-4 py-2 fw-bold'>
                             <i className="bi bi-pencil-square me-2"></i>Pendaftaran Mahasiswa Baru
                         </Link>
                         <Link to="/contact" className='btn btn-outline-light btn-lg px-4 py-2'>

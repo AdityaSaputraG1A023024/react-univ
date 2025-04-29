@@ -46,13 +46,21 @@ function Footer() {
             <div className='footer-title'>Get Connected On</div>
             <div className='footer-subtitle mb-3'>Social Media</div>
             <div className='d-flex flex-wrap gap-3'>
-              <Link to="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon'><i className="bi bi-facebook"></i></Link>
-              <Link to="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon'><i className="bi bi-instagram"></i></Link>
-              <Link to="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon'><i className="bi bi-youtube"></i></Link>
-              <Link to="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon'><i className="bi bi-whatsapp"></i></Link>
-              <Link to="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon'><i className="bi bi-linkedin"></i></Link>
+              <a href="https://www.facebook.com/unibofficial1" className='social-icon' target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/unibofficial/" className='social-icon' target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@UNIBTV" className='social-icon' target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-youtube"></i>
+              </a>
+              <a href="https://youtu.be/IpFX2vq8HKw?si=9DDj0pfqymdIXbZk" className='social-icon' target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-linkedin"></i>
+              </a>
             </div>
           </div>
+
 
         </div>
       </div>

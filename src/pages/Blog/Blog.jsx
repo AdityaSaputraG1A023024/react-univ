@@ -17,7 +17,8 @@ const blogs = [
         date: '15 april 2025',
         description: 'Bagaimana Universitas Bengkulu mengadaptasi teknologi terbaru untuk menciptakan pengalaman pembelajaran daring yang lebih interaktif dan efektif bagi mahasiswa.',
         category: 'Pendidikan',
-        featured: true
+        featured: true,
+        externalUrl: 'https:youtu.be/YiHnTR7ym8s?si=A3qCQT4B07XuDvjD'
     },
     {
         id: 2,
@@ -117,25 +118,32 @@ function Blog() {
                                 ))}
                             </ul>
                         </Card>
+
                         <Card className='shadow-sm border-0 p-4'>
                             <h5 className='fw-bold mb-4'>Artikel Populer</h5>
                             {blogs.filter(blog => blog.featured).map(blog => (
                                 <div key={blog.id} className="mb-3">
-                                    <Link to="/blog" className="text-decoration-none">
+                                    <a
+                                        href={blog.externalUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-decoration-none"
+                                    >
                                         <div className="d-flex">
                                             <img src={blog.img} alt={blog.title} className="rounded me-3" width="80" height="60" style={{ objectFit: 'cover' }} />
                                             <div>
-                                                <h6 className="mb-0">{blog.title}</h6>
+                                                <h6 className="mb-0 text-dark">{blog.title}</h6>
                                                 <small className="text-muted">
                                                     <i className="bi bi-calendar3 me-1"></i> {blog.date}
                                                 </small>
                                             </div>
                                         </div>
-                                    </Link>
+                                    </a>
                                 </div>
                             ))}
                         </Card>
                     </Col>
+
                     <Col lg={9}>
                         <div className="d-flex justify-content-between align-items-center mb-5">
                             <h2 className='fw-bold display-6'>Semua Artikel</h2>
@@ -187,11 +195,15 @@ function Blog() {
                                                     <Card.Text className='text-muted'>{blog.description}</Card.Text>
                                                 </Card.Body>
                                                 <Card.Footer className="bg-white border-0">
-                                                    <div className="d-flex justify-content-between align-items-center">
-                                                        <Link to="/blog" className="text-decoration-none">
-                                                            Baca Selengkapnya <i className="bi bi-arrow-right"></i>
-                                                        </Link>
-                                                    </div>
+                                                    <a
+                                                        href={blog.externalUrl}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="custom-read-more"
+                                                    >
+                                                        <span>Baca Selengkapnya</span>
+                                                        <i className="bi bi-box-arrow-up-right ms-2"></i>
+                                                    </a>
                                                 </Card.Footer>
                                             </Card>
                                         </Col>
@@ -200,16 +212,23 @@ function Blog() {
                                 <nav className="mt-5">
                                     <ul className="pagination justify-content-center">
                                         <li className="page-item disabled">
-                                            <a className="page-link" href="#prev" tabIndex="-1">Previous</a>
+                                            <button className="page-link" tabIndex="-1" disabled>Previous</button>
                                         </li>
-                                        <li className="page-item active"><a className="page-link" href="#blog">1</a></li>
-                                        <li className="page-item"><a className="page-link" href="#blog">2</a></li>
-                                        <li className="page-item"><a className="page-link" href="#blog">3</a></li>
+                                        <li className="page-item active">
+                                            <button className="page-link">1</button>
+                                        </li>
                                         <li className="page-item">
-                                            <a className="page-link" href="#blog">Next</a>
+                                            <button className="page-link">2</button>
+                                        </li>
+                                        <li className="page-item">
+                                            <button className="page-link">3</button>
+                                        </li>
+                                        <li className="page-item">
+                                            <button className="page-link">Next</button>
                                         </li>
                                     </ul>
                                 </nav>
+
                             </>
                         ) : (
                             <div className="text-center py -5">

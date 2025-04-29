@@ -33,6 +33,29 @@
     color: #0d6efd;
 }
 
+/* Blog.css */
+.custom-read-more {
+    display: inline-flex;
+    align-items: center;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-read-more:hover {
+    color: #0b5ed7;
+    transform: translateX(5px);
+}
+
+.custom-read-more i {
+    transition: transform 0.3s ease;
+}
+
+.custom-read-more:hover i {
+    transform: translateX(3px);
+}
+
 
 @media (max-width: 768px) {
     .blog-page header h1 {

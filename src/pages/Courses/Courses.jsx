@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Courses.css';
-import { Link } from 'react-router-dom';
 import { Card, Button, Badge, Form, InputGroup } from 'react-bootstrap';
 import BusinessCourseImg from '../../utils/images/business-course.png';
 import ComputerScienceCourseImg from '../../utils/images/computer-science-course.png';
@@ -18,7 +17,8 @@ const courses = [
         faculty: 'Fakultas Teknik',
         description: 'Program studi yang mengkhususkan diri dalam pengembangan perangkat lunak, kecerdasan buatan, dan sistem informasi.',
         accreditation: 'B',
-        featured: true
+        featured: true,
+        externalUrl: 'https://engineering.unib.ac.id/bi/'
     },
     {
         id: 3,
@@ -132,9 +132,11 @@ function Courses() {
                                         </div>
                                     </Card.Body>
                                     <Card.Footer className="bg-white border-0">
-                                        <Button variant="primary" className='w-100 py-2'>
-                                            Lihat Detail Program
-                                        </Button>
+                                        <a href={course.externalUrl} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                                            <Button variant="primary" className='w-100 py-2'>
+                                                Lihat Detail Program
+                                            </Button>
+                                        </a>
                                     </Card.Footer>
                                 </Card>
                             </div>
@@ -149,13 +151,15 @@ function Courses() {
                         </div>
                     )}
                 </div>
-                <div className="text-center mb-5">
-                    <Link to="/courses">
-                        <Button variant="primary" size="lg" className='px-4 py-2'>
-                            <i className="bi bi-collection me-2"></i> Lihat Semua Program
+                {searchQuery === '' && (
+                    <div className="text-center mb-5">
+                        <Button variant="primary" size="lg" className="px-4 py-2">
+                            <i className="bi bi-collection me-2"></i>
+                            Lihat Semua Program
                         </Button>
-                    </Link>
-                </div> 
+                    </div>
+
+                )}
             </div>
             <FaqAccordion />
         </div>
