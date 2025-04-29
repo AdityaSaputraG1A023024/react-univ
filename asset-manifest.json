@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-univ/static/css/main.9248498f.css",
-    "main.js": "/react-univ/static/js/main.5d10b014.js",
+    "main.js": "/react-univ/static/js/main.d5972bb1.js",
     "static/js/787.31653e38.chunk.js": "/react-univ/static/js/787.31653e38.chunk.js",
     "static/media/about-page-header.jpg": "/react-univ/static/media/about-page-header.5a3217216bd85c19352e.jpg",
     "static/media/blog6-img.png": "/react-univ/static/media/blog6-img.96cba68523b4f5bb009b.png",
@@ -36,11 +36,11 @@
     "static/media/contact-page-header.jpg": "/react-univ/static/media/contact-page-header.b4b37fef56c105e352d9.jpg",
     "index.html": "/react-univ/index.html",
     "main.9248498f.css.map": "/react-univ/static/css/main.9248498f.css.map",
-    "main.5d10b014.js.map": "/react-univ/static/js/main.5d10b014.js.map",
+    "main.d5972bb1.js.map": "/react-univ/static/js/main.d5972bb1.js.map",
     "787.31653e38.chunk.js.map": "/react-univ/static/js/787.31653e38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9248498f.css",
-    "static/js/main.5d10b014.js"
+    "static/js/main.d5972bb1.js"
   ]
 }
