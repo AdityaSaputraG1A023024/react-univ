@@ -41,7 +41,7 @@ function Contact() {
                             <i className="bi bi-geo-alt-fill fs-4 text-primary me-3 mt-1"></i>
                             <div>
                                 <h5 className='fw-semibold'>Address</h5>
-                                <p className='mb-0'>University of Bengkulu, Jl. WR Supratman, Kandang Limun, Bengkulu, Indonesia</p>
+                                <p className='mb-0'>University of Bengkulu, Jl. WR Supratman, Kandang Limun, Bengkulu 38371 – Indonesia</p>
                             </div>
                         </div>
 
@@ -49,7 +49,7 @@ function Contact() {
                             <i className="bi bi-envelope-fill fs-4 text-primary me-3 mt-1"></i>
                             <div>
                                 <h5 className='fw-semibold'>Email</h5>
-                                <p className='mb-0'>contact@unib.ac.id</p>
+                                <p className='mb-0'>rektorat@unib.ac.id</p>
                             </div>
                         </div>
 
@@ -57,7 +57,7 @@ function Contact() {
                             <i className="bi bi-telephone-fill fs-4 text-primary me-3 mt-1"></i>
                             <div>
                                 <h5 className='fw-semibold'>Phone</h5>
-                                <p className='mb-0'>+62 736 1234567</p>
+                                <p className='mb-0'>+62-736-21170</p>
                             </div>
                         </div>
 

@@ -10,41 +10,35 @@ import Blog2Img from '../../utils/images/blog2-img.jpg';
 import Blog3Img from '../../utils/images/blog3-img.jpg';
 import AboutImg from '../../utils/images/about-university-img.jpg';
 
-
 const blogs = [
     {
         id: 1,
         img: Blog1Img,
-        category: 'Pendidikan',
-        author: 'Dr. Ahmad Fauzi',
         title: 'Inovasi Pembelajaran Daring di Era Digital',
+        date: '15 april 2025',
         description: 'Bagaimana Universitas Bengkulu mengadaptasi teknologi terbaru untuk menciptakan pengalaman pembelajaran daring yang lebih interaktif dan efektif bagi mahasiswa.',
-        date: '15 Juni 2023',
+        category: 'Pendidikan',
+        featured: true,
         externalUrl: 'https:youtu.be/YiHnTR7ym8s?si=A3qCQT4B07XuDvjD'
     },
     {
         id: 2,
         img: Blog2Img,
-        category: 'Penelitian',
-        author: 'Prof. Sri Mulyani',
         title: 'Penelitian Terbaru: Potensi Ekosistem Mangrove Bengkulu',
-        description: 'Tim peneliti UNIB berhasil mengidentifikasi spesies mangrove langka yang memiliki potensi besar untuk pengembangan obat-obatan modern.',
-        date: '10 Juni 2023'
+        date: '10 april 2025',
+        description: 'Tim peneliti UNIB berhasil mengidentifikasi spesies mangrove langka yang memiliki potensi besar untuk pengembangan obat-obatan.',
+        category: 'Penelitian',
     },
     {
         id: 3,
         img: Blog3Img,
-        category: 'Prestasi',
-        author: 'Dian Sastro',
         title: 'Mahasiswa UNIB Juara Kompetisi Robotik Nasional',
+        date: '5 maret 2025',
         description: 'Tim robotik Fakultas Teknik UNIB berhasil meraih juara pertama dalam kompetisi nasional dengan inovasi robot pembersih sampah pantai.',
-        date: '5 Juni 2023',
+        category: 'Prestasi',
         featured: true
-        
-    }
+    },
 ];
-
-
 
 function Home() {
     return (
@@ -90,6 +84,7 @@ function Home() {
                             </Button>
                         </Link>
                     </div>
+                    
                 </div>
             </div>
 

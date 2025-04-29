@@ -37,8 +37,8 @@ function Footer() {
             <p className='footer-text'>Bengkulu 38371 – Indonesia</p>
 
             <div className='footer-title mt-4'>Contact Us</div>
-            <p className='footer-text mb-1'><i className="bi bi-telephone me-2"></i>Phone: +62 736 21170</p>
-            <p className='footer-text'><i className="bi bi-envelope me-2"></i>Email: info@unib.ac.id</p>
+            <p className='footer-text mb-1'><i className="bi bi-telephone me-2"></i>Phone: +62-736-21170</p>
+            <p className='footer-text'><i className="bi bi-envelope me-2"></i>Email: rektorat@unib.ac.id</p>
           </div>
 
           {/* Connect with us */}
