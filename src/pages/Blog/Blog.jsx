@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Blog.css';
-import { Link } from 'react-router-dom';
 import { Card, Button, Badge, Container, Row, Col } from 'react-bootstrap';
 import Blog1Img from '../../utils/images/blog1-img.jpg';
 import Blog2Img from '../../utils/images/blog2-img.jpg';
@@ -107,17 +106,15 @@ function Blog() {
                             <ul className="list-unstyled">
                                 {categories.map((category, index) => (
                                     <li key={index} className="mb-3">
-                                        <Link
-                                            to="/blog"
-                                            className="text-decoration-none w-100 d-flex justify-content-between align-items-center text-dark"
-                                        >
+                                        <div className="w-100 d-flex justify-content-between align-items-center text-dark">
                                             <span className="text-start">{category.name}</span>
                                             <Badge bg="primary" pill className="ms-2">{category.count}</Badge>
-                                        </Link>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
                         </Card>
+
 
                         <Card className='shadow-sm border-0 p-4'>
                             <h5 className='fw-bold mb-4'>Artikel Populer</h5>
